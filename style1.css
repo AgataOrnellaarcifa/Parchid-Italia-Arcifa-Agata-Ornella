@@ -1,0 +1,1377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Petrona" sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #1e1e1e;
+}
+
+header{
+    background: #325E53;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Acme", sans-serif;
+}
+
+header img{
+    width: 76px;
+    height: 76px;
+    border: none;
+    color:#325E53;
+}
+
+header .home{
+    flex: 1;
+    margin-left: 7px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    position: relative;
+    transition: color 0.3 ease; 
+
+}
+
+nav a::after{
+    content: ''; 
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: -1px;
+    left:0px;
+    background-color: white;
+    transition: width 0.3 ease;
+
+
+}
+
+nav a:hover{
+    color: white;
+
+}
+
+nav a:hover::after{
+    width: 100%;
+
+}
+
+
+
+.zoom-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+
+
+  .zoom-link:hover {
+    transform: scale(1.05); /* ingrandisce del 5% */
+  }
+
+.park-name2.zoom-link{
+    text-align: center;
+}
+
+
+
+
+.hero{
+    position: relative;
+    background: url('images/img11.webp') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 83px;
+    color: #fff;
+    font-family: "Petrona", sans-serif;
+    
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Cambia 0.4 per regolare l'oscurità */
+    z-index: 0;
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1, .hero p, .hero button {
+    margin-left:40px;
+   
+    
+}
+
+.hero-buttons{
+    margin-top: 15px;
+}
+
+.hero h1{
+    font-size: 60px;
+    max-width: 100%;
+    
+}
+
+.hero p{
+    font-size: 20px;
+   
+}
+
+.heroetna h1, .heroetna p {
+    margin-left: 40px;
+}
+
+.heroetna h1{
+    font-size: 60px;
+    max-width: 100%;
+}
+
+.heroetna p{
+    font-size:20px;
+}
+.herosila p{
+    font-size:20px;
+}
+.herovesuvio p{
+    font-size:20px;
+}
+.herotoscano p{
+    font-size:20px;
+}
+.heroesperienze p{
+    font-size:20px;
+}
+
+
+.herosila h1, .herosila p {
+    margin-left: 40px;
+}
+
+.herosila h1{
+    font-size: 60px;
+    max-width: 100%;
+}
+
+
+
+
+.herovesuvio h1, .herovesuvio p {
+    margin-left: 40px;
+}
+
+.herovesuvio h1{
+    font-size: 60px;
+    max-width: 100%;
+}
+
+
+.herotoscano h1, .herotoscano p {
+    margin-left: 40px;
+}
+
+.herotoscano h1{
+    font-size: 60px;
+    max-width: 100%;
+}
+
+.herotoscano p{
+    margin-top: 11px;
+}
+
+.interlinea1 {
+    line-height: 60px; 
+
+}
+.hero-buttons a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; /* Mantiene i margini e il padding */
+  }
+
+
+
+.hero-buttons button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top:30px;
+}
+
+.btn-primary{
+    background: #325E53;
+    color: #fff;
+}
+
+.btn-secondary{
+    background: #fff;
+    color: #325E53;
+    border: 2px solid #325E53;
+}
+
+section {
+    padding-block: 4rem;
+    padding-inline: 0rem;
+    max-width: 1070px;
+    margin-inline: auto;
+    
+    
+    
+}
+
+h2{
+    font-size: 26px;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Petrona", sans-serif;
+    margin-top: 100px;
+    
+}
+
+.park-description{
+    font-family: "petrona", sans-serif;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.park-descriptionuno{
+    font-family: "petrona", sans-serif;
+    margin-left: 20px;
+    font-size: 24px;
+}
+.park-descriptiontitolo{
+    font-family: "petrona", sans-serif;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.park-name{
+    font-family:"Petrona", sans-serif;
+    
+}
+
+.park-name2{
+    font-family:"Petrona", sans-serif;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+
+.parks-grid{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 50px;
+    justify-content: center;
+}
+
+.park-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:100px;
+    
+}
+
+.park-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    width: 93%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+
+
+.park-cardsec {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    width: 93%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+.park-cardter {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    width: 93%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .park-cardter {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.park-cardter::after {
+  content: "→";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-link:hover .park-cardter::after {
+  opacity: 1;
+}
+
+
+.park-card img{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+
+
+.park-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Cambia 0.4 per regolare l'oscurità */
+    z-index: 0;
+}
+
+.park-card p{
+    position: relative;
+    padding: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    z-index: 2;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    background: rgba(4, 43, 33, 0.7); /* Colore e opacità dell’overlay */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  .overlay h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: capitalize;
+  }
+
+
+
+.separator{
+  
+    border: none;
+    height: 2px;
+    background-color: #325E53;
+    width: 97%;
+    margin-right: 20px;
+}
+
+.separator1{
+  
+    border: none;
+    height: 2px;
+    background-color: #325E53;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom:100px;
+    margin-top:100px;
+}
+
+.activity-section{
+    padding-block: 4rem;
+    padding-inline: 0rem;
+    max-width: 1200px;
+    
+}
+
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 76px;
+    height: 76px;
+}
+
+.brand-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+}
+
+.heroetna {
+    position: relative;
+    background: url('images2/img1.png') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    color: #fff;
+    z-index: 1;
+}
+
+.heroetna::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.heroetna h1,
+.heroetna p {
+    position: relative;
+    z-index: 1;
+}
+.herosila {
+    position: relative;
+    background: url('images4/img1.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    color: #fff;
+    z-index: 1;
+}
+
+.herosila::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.herosila h1,
+.herosila p {
+    position: relative;
+    z-index: 1;
+}
+
+.herovesuvio {
+    position: relative;
+    background: url('images5/img1.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    color: #fff;
+    z-index: 1;
+}
+
+.herovesuvio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.herovesuvio h1,
+.herovesuvio p {
+    position: relative;
+    z-index: 1;
+}
+
+.herotoscano {
+    position: relative;
+    background: url('images6/img1.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    color: #fff;
+    z-index: 1;
+}
+
+.herotoscano::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.herotoscano h1,
+.herotoscano p {
+    position: relative;
+    z-index: 1;
+}
+
+.heroesperienze {
+    position: relative;
+    background: url('images/img11.webp') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    color: #fff;
+    z-index: 1;
+}
+
+.heroesperienze::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.heroesperienze h1,
+.heroesperienze p {
+    position: relative;
+    z-index: 1;
+}
+
+.heroesperienze h1, .heroesperienze p {
+    margin-left:40px;
+}
+
+.heroesperienze h1{
+    font-size: 60px;
+    max-width: 100%;
+}
+
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.text-img img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.text-img {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    
+}
+
+
+
+.text-img .img1{
+  height: 330px;
+  width: 400px;
+}
+.text-img .img3{
+    height: 210px;
+    width: 400px;
+  }
+
+.text-img .img2{
+    height: 200px;
+    width: 400px;
+  }
+
+.text-img .imgrigogliosa{
+    height:200px;
+    width: 400px;
+}
+.text-img .imgetna{
+    height: 250px;
+    width: 400px;
+  }
+   
+
+  
+
+
+
+.text-column {
+    flex: 1;
+    max-width: 60%;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.text-column p {
+    margin-bottom: 1rem;
+}
+
+.text-columntwo {
+    flex: 1;
+    max-width: 60%;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.text-columntwo p {
+    margin-bottom: 1.5rem;
+}
+.text-columnrigogliosa {
+    flex: 1;
+    max-width: 60%;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.text-columnrigogliosa p {
+    margin-bottom: 1.5rem;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.image-column img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.text-imgsila img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.text-img .imgsilauno {
+    height: 210px;
+    width: 400px;
+}
+
+.text-img .imgsiladue {
+    height: 290px;
+    width: 400px;
+}
+
+
+
+
+.text-img .imgsilaquattro{
+    height: 230px;
+    width: 400px;
+  }
+.text-img .imgsilacinque{
+    height: 210px;
+    width: 400px;
+  }
+
+.text-img .imgvesuviouno{
+    height: 230px;
+    width: 400px;
+  }
+.text-img .imgvesuviodue{
+    height: 340px;
+    width: 400px;
+  }
+
+.text-img .imgvesuviotre{
+    height: 150px;
+    width: 400px;
+  }
+.text-img .imgvesuvioquattro{
+    height: 175px;
+    width: 400px;
+  }
+
+.text-img .imgvesuviocinque{
+    height: 247px;
+    width: 400px;
+  }
+
+.text-img .imgtoscano{
+    height: 220px;
+    width: 400px;
+  }
+.text-img .imgtoscanodue{
+    height: 240px;
+    width: 400px;
+  }
+.text-img .imgtoscanotre{
+    height: 230px;
+    width: 400px;
+  }
+.text-img .imgtoscanoquattro{
+    height: 200px;
+    width: 400px;
+  }
+.text-img .imgtoscanocinque{
+    height: 190px;
+    width: 400px;
+  }
+  .text-img .imgtoscanosei{
+    height: 350px;
+    width: 400px;
+  }
+
+
+
+
+
+
+
+.cards-grid .info-card .pyem{
+    margin-top: 0,95rem;
+}
+
+
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    width: 485px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1.3rem;
+    background: white;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    font-size: 1.0rem;
+    line-height: 1.5;
+}
+
+.info-card h4{
+    margin-bottom: 9px;
+}
+
+.informazioniutili{
+    padding-bottom: 70px;
+    color:#325E53;
+    font-size: 32px;
+}
+
+
+
+.section-prime {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+.section-wrapper {
+max-width: 1010px;
+margin: 0 auto;
+padding: 4rem 3rem;
+}
+
+.section-title {
+font-size: 1.4rem;
+font-weight: 700;
+color: #325E53;
+margin-bottom: 2rem;
+}
+
+.section {
+display: flex;
+justify-content: flex-end;
+}
+
+.section-content {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+margin-left: auto; /* sposta tutto a destra */
+max-width: 700px; /* larghezza massima */
+
+}
+
+.text-block {
+max-width: 600px;
+}
+
+.text-block h3 {
+color: #2d5b4f;
+margin-bottom: 0.5rem;
+}
+
+.text-block p {
+margin-bottom: 1rem;
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.images-row {
+display: flex;
+gap: 1rem;
+}
+
+.images-row img {
+width: 100%;
+max-width: 290px;
+height: auto;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.single-image img{
+width: 100%;
+max-width: 600px;
+height: 250px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+
+/*Visite guidate e
+laboratori didattici*/
+
+.separator {
+margin: 4rem auto 3rem;
+border: none;
+height: 2px;
+background-color: #325E53;
+width: 90%;
+}
+
+.visite-lab-section {
+display: flex;
+align-items: flex-start;
+gap: 4rem;
+max-width: 1100px;
+margin: 0 auto;
+padding: 2rem;
+margin-bottom: 10%;
+
+}
+
+.title-lab {
+flex: 1;
+font-weight: 600;
+color: #325E53;
+font-size: 1.3rem;
+}
+
+
+.cards-lab {
+flex: 3;
+display: flex;
+flex-direction: column;
+gap: 2.4rem;
+max-width: 630px;
+}
+
+.card-lab {
+display: flex;
+gap: 1rem;
+align-items: flex-start;
+}
+
+.card-lab img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.lab-text {
+max-width: 600px;
+}
+
+.lab-text p {
+margin-top: 5px;
+font-size: 0.95rem;
+}
+
+.lab-text {
+    margin-top: 60px;
+}
+
+.sport-content .uno{
+    width: 200px;
+    height: 280px;;
+}
+
+.lab-text .verde{
+    color:#325E53;
+    font-size:20px;
+}
+
+.sport-content .verde{
+    color:#325E53;
+    font-size: 20px;
+    
+}
+
+.sport-title-all{
+    margin-top: 20px;
+    
+}
+
+
+
+/*sport all'aria aperta*/
+.sport-section {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding:  1rem;
+    
+    
+  }
+  
+  .sport-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #325E53;
+    
+    
+  }
+
+  .sport-section .sport-title{
+    margin-left: 8px;
+    margin-bottom: 150px;
+  }
+  
+  .sport-row {
+    display: flex;
+    margin-bottom: 2.5rem;
+    gap:60px;
+  }
+  
+  .sport-label {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+    text-align: start;
+    padding-right: 0px;
+    padding-left: 8px;
+  }
+  
+  .sport-content {
+    flex: 3;
+    display: flex;
+    gap: 1.5rem;
+    max-width: 630px;
+  }
+  
+  .sport-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .sport-content div {
+    flex: 1;
+  }
+  
+  .sport-content p {
+    margin: 5px 0 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+
+
+
+
+footer {
+    background: #2d5b4f;
+    color: white;
+    text-align: center;
+    padding: 2rem 2rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu-toggle-label span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+.menu-toggle-label span::before,
+.menu-toggle-label span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Posizionamento delle barre */
+.menu-toggle-label span::before {
+  top: -8px;
+}
+
+.menu-toggle-label span::after {
+  top: 8px;
+}
+
+.card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.card-link:hover .park-card, 
+.card-link:hover .park-cardsec {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-link:active .park-card,
+.card-link:active .park-cardsec {
+  transform: scale(0.98);
+}
+
+.card-link .park-card::after,
+.card-link .park-cardsec::after {
+  content: "→";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.card-link:hover .park-card::after,
+.card-link:hover .park-cardsec::after {
+  opacity: 1;
+}
+
+.park-card, 
+.park-cardsec {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link:hover .park-cardter {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.park-card p {
+  position: relative;
+  z-index: 2;
+}
+.park-cardter {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Media queries per la responsività */
+@media (max-width: 992px) {
+  .parks-grid {
+    gap: 25px;
+  }
+  
+  .park-descriptionuno {
+    font-size: 22px;
+  }
+  
+  .park-description {
+    font-size: 16px;
+  }
+  
+  .park-description br, 
+  .hero p br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header e navigazione */
+  header {
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .menu-toggle-label {
+    display: block;
+  }
+  
+  
+  .hamburger-menu:checked ~ .menu-toggle-label span {
+    background-color: transparent !important; /* Forza la trasparenza */
+  }
+  
+  .hamburger-menu:checked ~ .menu-toggle-label span::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-menu:checked ~ .menu-toggle-label span::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #325E53;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+  }
+  
+  nav a {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    display: block;
+  }
+  
+  .hamburger-menu:checked ~ nav {
+    right: 0;
+  }
+  
+  
+  /* Hero section */
+  .hero {
+    padding: 0 2rem;
+    text-align: center;
+    height: 350px;
+    align-items: center;
+  }
+  
+  .hero h1, .hero p {
+    margin-left: 0;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+
+  .parks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .park-container {
+    width: 100%;
+  }
+  
+  .park-cardter {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .overlay {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .park-descriptionuno {
+    text-align: center;
+  }
+  
+  .park-description {
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .activity-section {
+    padding: 2.5rem 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  footer a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-name {
+    font-size: 0.9rem;
+  }
+  
+  .brand img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .hero {
+    height: 300px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 15px;
+  }
+  
+  /* Parks grid */
+  .parks-grid {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    margin-inline: auto;
+    margin-top: 30px;
+  }
+  
+  .park-cardter {
+    height: 220px;
+  }
+  
+  .overlay {
+    font-size: 13px;
+  }
+  
+  .park-descriptionuno {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+  
+  .park-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
