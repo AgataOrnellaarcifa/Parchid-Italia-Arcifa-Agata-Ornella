@@ -1333,6 +1333,58 @@ footer a {
     gap: 2rem;
   }
 
+  /*attiviità ed esperienze*/
+  .heroesperienze {
+    padding-left: 60px;
+  }
+  
+  .heroesperienze h1 {
+    font-size: 48px;
+  }
+  
+  /* Section wrapper e contenuto */
+  .section-wrapper {
+    padding: 3rem 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  /* Immagini e testo */
+  .single-image img {
+    height: 220px;
+  }
+  
+  .images-row img {
+    max-width: 250px;
+  }
+  
+  /* Sezione visite lab */
+  .visite-lab-section {
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+  
+  .card-lab img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  /* Sezione sport */
+  .sport-row {
+    gap: 40px;
+  }
+  
+  .sport-content img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .sport-content .uno {
+    height: 240px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1633,6 +1685,144 @@ footer a {
   .info-card {
     width: 100%;
   }
+
+  /*attiviità ed esperienze*/
+  .heroesperienze {
+    padding-left: 30px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .heroesperienze h1, .heroesperienze p {
+    margin-left: 0;
+  }
+  
+  .heroesperienze h1 {
+    font-size: 42px;
+  }
+  
+  .heroesperienze p br {
+    display: none;
+  }
+  
+  /* Section wrapper e contenuto */
+  .section-wrapper {
+    padding: 2rem 1.5rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .section-title br {
+    display: none;
+  }
+  
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-block {
+    max-width: 100%;
+  }
+  
+  .text-block h3 {
+    margin-top: 1.5rem;
+  }
+  
+  .single-image img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  
+  .images-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .images-row img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Visite lab section */
+  .visite-lab-section {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 15%;
+  }
+  
+  .title-lab {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cards-lab {
+    max-width: 100%;
+  }
+  
+  .card-lab {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-lab img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .lab-text {
+    margin-top: 1rem;
+  }
+  
+  /* Sport section */
+  .sport-section .sport-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .sport-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .sport-label {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #325E53;
+    padding: 0;
+  }
+  
+  .sport-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .sport-content img,
+  .sport-content .uno {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .separator1 {
+    margin: 3.5rem auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1846,5 +2036,93 @@ footer a {
   .info-card h4 {
     font-size: 1rem;
     margin-bottom: 8px;
+  }
+
+  /*attiviità ed esperienze*/
+  .heroesperienze {
+    padding: 0 15px;
+    height: 300px;
+  }
+  
+  .heroesperienze h1 {
+    font-size: 32px;
+  }
+  
+  .heroesperienze p {
+    font-size: 16px;
+  }
+  
+  /* Section wrapper e contenuto */
+  .section-wrapper {
+    padding: 1.5rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-content {
+    gap: 1.5rem;
+  }
+  
+  .text-block h3 {
+    font-size: 1.1rem;
+  }
+  
+  .text-block p {
+    font-size: 0.9rem;
+  }
+  
+  /* Visite lab section */
+  .visite-lab-section {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .title-lab {
+    font-size: 1.2rem;
+  }
+  
+  .cards-lab {
+    gap: 2rem;
+  }
+  
+  .card-lab img {
+    max-width: 250px;
+  }
+  
+  .lab-text .verde {
+    font-size: 1rem;
+  }
+  
+  .lab-text p {
+    font-size: 0.9rem;
+  }
+  
+  /* Sport section */
+  .sport-section {
+    padding: 1rem;
+  }
+  
+  .sport-section .sport-title {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sport-label {
+    font-size: 1.1rem;
+  }
+  
+  .sport-content .verde {
+    font-size: 1rem;
+  }
+  
+  .sport-content p {
+    font-size: 0.9rem;
+  }
+  
+  .separator1 {
+    margin: 3rem auto;
   }
 }
