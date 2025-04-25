@@ -204,11 +204,7 @@ nav a:hover::after{
     line-height: 60px; 
 
 }
-.hero-buttons a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block; /* Mantiene i margini e il padding */
-  }
+
 
 
 
@@ -1211,6 +1207,132 @@ footer a {
   .hero p br {
     display: none;
   }
+
+  /*parco etna*/
+  .heroetna {
+    padding-left: 60px;
+  }
+  
+  .heroetna h1 {
+    font-size: 48px;
+  }
+  
+  /* Main content */
+  main {
+    padding: 3rem 2rem;
+  }
+  
+  /* Text and image layout */
+  .text-img {
+    gap: 1.5rem;
+  }
+  
+  .text-column, .text-columntwo, .text-columnrigogliosa {
+    max-width: 65%;
+    font-size: 0.95rem;
+  }
+  
+  .text-img img {
+    width: 350px;
+  }
+  
+  .text-img .imgetna, 
+  .text-img .img1, 
+  .text-img .img3, 
+  .text-img .img2,
+  .text-img .imgrigogliosa {
+    width: 350px;
+    height: auto;
+  }
+  
+  /* Info cards */
+  .cards-grid {
+    gap: 3rem;
+  }
+  
+  .info-card {
+    width: 400px;
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  /*parco toscano*/
+
+  .herotoscano {
+    padding-left: 60px;
+  }
+  
+  .herotoscano h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  
+  .interlinea1 {
+    line-height: 50px;
+  }
+  
+ 
+  .text-img .imgtoscano,
+  .text-img .imgtoscanodue,
+  .text-img .imgtoscanotre,
+  .text-img .imgtoscanoquattro,
+  .text-img .imgtoscanocinque,
+  .text-img .imgtoscanosei {
+    width: 350px;
+    height: auto;
+  }
+
+  /*parco sila*/
+
+  .herosila {
+    padding-left: 60px;
+  }
+  
+  .herosila h1 {
+    font-size: 48px;
+  }
+  
+  .text-img .imgsilauno,
+  .text-img .imgsiladue,
+  .text-img .imgsila,
+  .text-img .imgsilaquattro,
+  .text-img .imgsilacinque {
+    width: 350px;
+    height: auto;
+  }
+  
+  /* Colonne di testo */
+  .text-column p {
+    font-size: 0.95rem;
+  }
+
+
+  /*parco vesuvio*/
+  .herovesuvio {
+    padding-left: 60px;
+  }
+  
+  .herovesuvio h1 {
+    font-size: 48px;
+  }
+  
+  /* Immagini specifiche per parco vesuvio */
+  .text-img .imgvesuviouno,
+  .text-img .imgvesuviodue,
+  .text-img .imgvesuviotre,
+  .text-img .imgvesuvioquattro,
+  .text-img .imgvesuviocinque {
+    width: 350px;
+    height: auto;
+  }
+  
+  /* Layout a due colonne per le info cards */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1325,6 +1447,192 @@ footer a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+
+  /*parco etna*/
+
+  .heroetna {
+    padding-left: 30px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .heroetna h1, .heroetna p {
+    margin-left: 0;
+  }
+  
+  .heroetna h1 {
+    font-size: 42px;
+  }
+  
+  /* Main content */
+  main {
+    padding: 2rem 1.5rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 60px;
+  }
+  
+  /* Text and image layout - switch to vertical */
+  .text-img {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .text-column, .text-columntwo, .text-columnrigogliosa {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .text-img img, 
+  .text-img .imgetna, 
+  .text-img .img1, 
+  .text-img .img3, 
+  .text-img .img2,
+  .text-img .imgrigogliosa {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+  
+  .image-column {
+    width: 100%;
+    max-width: 450px;
+  }
+  
+
+  .cards-grid {
+    gap: 2rem;
+  }
+  
+  .info-card {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .informazioniutili {
+    font-size: 28px;
+    padding-bottom: 40px;
+  }
+  
+  /* Separators */
+  .separator {
+    margin: 3rem auto;
+  }
+
+  /*parco toscano*/
+
+  .herotoscano {
+    padding-left: 30px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .herotoscano h1, .herotoscano p {
+    margin-left: 0;
+  }
+  
+  .herotoscano h1 {
+    font-size: 42px;
+    line-height: 45px;
+  }
+  
+  .interlinea1 {
+    line-height: 45px;
+  }
+  
+  /* Immagini specifiche per parco toscano */
+  .text-img .imgtoscano,
+  .text-img .imgtoscanodue,
+  .text-img .imgtoscanotre,
+  .text-img .imgtoscanoquattro,
+  .text-img .imgtoscanocinque,
+  .text-img .imgtoscanosei {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  /*parco sila*/
+  .herosila {
+    padding-left: 30px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .herosila h1, .herosila p {
+    margin-left: 0;
+  }
+  
+  .herosila h1 {
+    font-size: 42px;
+  }
+
+  .text-img .imgsilauno,
+  .text-img .imgsiladue,
+  .text-img .imgsila,
+  .text-img .imgsilaquattro,
+  .text-img .imgsilacinque {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 1rem; 
+  }
+  
+  .info-card h4 {
+    font-size: 1.1rem;
+  }
+
+  /*parco vesuvio*/
+  .herovesuvio {
+    padding-left: 30px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .herovesuvio h1, .herovesuvio p {
+    margin-left: 0;
+  }
+  
+  .herovesuvio h1 {
+    font-size: 42px;
+  }
+  
+
+  .text-img .imgvesuviouno,
+  .text-img .imgvesuviodue,
+  .text-img .imgvesuviotre,
+  .text-img .imgvesuvioquattro,
+  .text-img .imgvesuviocinque {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .info-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1373,5 +1681,170 @@ footer a {
   .park-description {
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  /*parco etna*/
+
+  .heroetna {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 300px;
+  }
+  
+  .heroetna h1 {
+    font-size: 32px;
+  }
+  
+  .heroetna p {
+    font-size: 16px;
+  }
+  
+  /* Main content */
+  main {
+    padding: 1.5rem 1rem;
+  }
+  
+  section {
+    margin-bottom: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  /* Text content */
+  .text-column p, 
+  .text-columntwo p, 
+  .text-columnrigogliosa p {
+    font-size: 0.95rem;
+  }
+  
+  /* Images */
+  .text-img img {
+    border-radius: 8px;
+  }
+  
+  .image-column {
+    gap: 1rem;
+  }
+  
+  /* Info cards */
+  .info-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .informazioniutili {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+  
+  .cards-grid {
+    gap: 1.5rem;
+  }
+  
+  /* Separators */
+  .separator {
+    margin: 2.5rem auto;
+  }
+
+  /*parco toscano*/
+  .herotoscano {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 300px;
+  }
+  
+  .herotoscano h1 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  
+  .interlinea1 {
+    line-height: 35px;
+  }
+  
+  .herotoscano p {
+    font-size: 16px;
+  }
+  
+  /* Fix image sizes */
+  .image-column {
+    max-width: 100%;
+  }
+
+  
+  .text-img .imgtoscano,
+  .text-img .imgtoscanodue,
+  .text-img .imgtoscanotre,
+  .text-img .imgtoscanoquattro,
+  .text-img .imgtoscanocinque,
+  .text-img .imgtoscanosei {
+    border-radius: 8px;
+  }
+
+  /*parco sila*/
+  .herosila {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 300px;
+  }
+  
+  .herosila h1 {
+    font-size: 32px;
+  }
+  
+  .herosila p {
+    font-size: 16px;
+  }
+  
+  .text-img .imgsilauno,
+  .text-img .imgsiladue,
+  .text-img .imgsila,
+  .text-img .imgsilaquattro,
+  .text-img .imgsilacinque {
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  
+  /*parco vesuvio*/
+  .herovesuvio {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 300px;
+  }
+  
+  .herovesuvio h1 {
+    font-size: 32px;
+  }
+  
+  .herovesuvio p {
+    font-size: 16px;
+  }
+
+  .text-img .imgvesuviouno,
+  .text-img .imgvesuviodue,
+  .text-img .imgvesuviotre,
+  .text-img .imgvesuvioquattro,
+  .text-img .imgvesuviocinque {
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .info-card h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
   }
 }
